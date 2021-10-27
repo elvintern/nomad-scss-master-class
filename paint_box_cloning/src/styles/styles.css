@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caladea&family=Montserrat:ital,wght@0,300;0,600;0,800;1,700;1,800&display=swap");
+header nav ul:first-child li, .hero h4, .hero a {
+  font-family: "Montserrat";
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Caladea";
+  padding: 0px 140px;
+  padding-top: 70px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0px 140px;
+  background-color: white;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+header nav ul:first-child li {
+  margin-right: 60px;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.3))), url("https://images.unsplash.com/photo-1618425932600-6a6668dd577c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80v");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1618425932600-6a6668dd577c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80v");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.hero h4 {
+  margin-bottom: 30px;
+}
+
+.hero h3 {
+  font-size: 48px;
+  width: 35%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero a {
+  width: 10%;
+  background-color: white;
+  padding: 20px 0px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 10px;
+  -webkit-transition: color 0.3s linear, background 0.3s linear;
+  transition: color 0.3s linear, background 0.3s linear;
+}
+
+.hero a:hover {
+  background-color: black;
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */
