@@ -1,0 +1,77 @@
+@import "reset";
+@import "_variables";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: $bg;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1.5fr 1.9fr 1.5fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  gap: 1px;
+  & > *:not(script) {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $bg;
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+  .menu {
+    grid-column-start: -2;
+  }
+  .center-image {
+    grid-column: 2 / -2;
+    grid-row: 2 / -2;
+    background-image: url("https://images.unsplash.com/photo-1635249475303-f4705d4807f8?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDh8eEh4WVRNSExnT2N8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-position: center;
+    background-size: cover;
+  }
+  .number__row {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: 1fr;
+    background-color: $bg;
+    height: 100%;
+    align-items: stretch;
+    .number {
+      color: $bg;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: color 0.3s linear, background-color 0.3s linear;
+      &:hover {
+        background-color: $bg;
+        color: white;
+      }
+    }
+  }
+  .scrolling__text {
+    grid-column: 2 / -2;
+    white-space: nowrap;
+    overflow: hidden;
+    span {
+      animation: scrollText 5s linear infinite forwards;
+    }
+  }
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(-150px);
+  }
+  50% {
+    transform: translateX(150px);
+  }
+  100% {
+    transform: translateX(-150px);
+  }
+}
