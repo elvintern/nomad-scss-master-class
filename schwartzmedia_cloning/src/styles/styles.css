@@ -152,16 +152,17 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  z-index: 2;
 }
 
 .header__logo {
-  font-size: 50px;
+  font-size: 3.7rem;
   font-weight: 700;
-  padding: 30px;
+  padding: 1.5rem;
 }
 
 .header__logo .fas {
-  font-size: 30px;
+  font-size: 2rem;
   position: absolute;
   top: 10;
 }
@@ -171,9 +172,9 @@ body {
 }
 
 .header__media {
-  font-size: 50px;
+  font-size: 3.5rem;
   font-weight: 700;
-  padding: 30px;
+  padding: 2rem;
 }
 
 main {
@@ -211,8 +212,8 @@ main {
 }
 
 .main-post__caption {
-  font-size: 30px;
-  margin-top: 40px;
+  font-size: 2rem;
+  margin-top: 2.5em;
   font-weight: 700;
 }
 
@@ -222,24 +223,24 @@ main {
 }
 
 .main-post .main-post__article__content {
-  margin-top: 75px;
-  letter-spacing: 1.5px;
+  margin-top: 4.6em;
+  letter-spacing: 0.094em;
   line-height: 45px;
 }
 
 .main-post .main-post__article__content p {
-  font-size: 30px;
+  font-size: 1.875em;
   font-weight: 400;
 }
 
 .main-post .main-post__article__content p span {
-  font-size: 25px;
+  font-size: 1em;
   font-weight: 600;
   margin-right: 80px;
 }
 
 .main-post .main-post__article__view {
-  font-size: 23px;
+  font-size: 1.4rem;
   font-weight: 600;
   margin-top: 20px;
   margin-bottom: 140px;
@@ -271,7 +272,7 @@ main {
 }
 
 .main-items .main-item:first-child {
-  padding: 20px 0px;
+  padding: 1.25em 0px;
 }
 
 .main-items .main-item div {
@@ -289,16 +290,23 @@ main {
 }
 
 .main-items .main-item div .item__category {
-  font-size: 23px;
+  font-size: 1.438rem;
   font-weight: 600;
 }
 
 .main-items .main-item div .item__description {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 400;
 }
 
+.main-items .main-item div .btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .main-items .main-item div a {
+  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -308,12 +316,13 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   text-decoration: none;
-  width: 130px;
-  height: 30px;
+  width: 8.125rem;
+  height: 1.875rem;
   border: 1px solid black;
-  border-radius: 20px;
+  border-radius: 1.25rem;
+  margin-right: 1rem;
 }
 /*# sourceMappingURL=styles.css.map */

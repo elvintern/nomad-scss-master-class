@@ -18,12 +18,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  z-index: 2;
   &__logo {
-    font-size: 50px;
+    font-size: 3.7rem;
     font-weight: 700;
-    padding: 30px;
+    padding: 1.5rem;
     .fas {
-      font-size: 30px;
+      font-size: 2rem;
       position: absolute;
       top: 10;
     }
@@ -32,9 +33,9 @@ body {
     }
   }
   &__media {
-    font-size: 50px;
+    font-size: 3.5rem;
     font-weight: 700;
-    padding: 30px;
+    padding: 2rem;
   }
 }
 
@@ -60,8 +61,8 @@ main {
     background-image: url("https://source.unsplash.com/random/");
   }
   &__caption {
-    font-size: 30px;
-    margin-top: 40px;
+    font-size: 2rem;
+    margin-top: 2.5em;
     font-weight: 700;
     .fa-arrow-down {
       position: absolute;
@@ -69,21 +70,21 @@ main {
     }
   }
   .main-post__article__content {
-    margin-top: 75px;
-    letter-spacing: 1.5px;
+    margin-top: 4.6em;
+    letter-spacing: 0.094em;
     line-height: 45px;
     p {
-      font-size: 30px;
+      font-size: 1.875em;
       font-weight: 400;
       span {
-        font-size: 25px;
+        font-size: 1em;
         font-weight: 600;
         margin-right: 80px;
       }
     }
   }
   .main-post__article__view {
-    font-size: 23px;
+    font-size: 1.4rem;
     font-weight: 600;
     margin-top: 20px;
     margin-bottom: 140px;
@@ -106,9 +107,8 @@ main {
         order: 1;
       }
     }
-
     &:first-child {
-      padding: 20px 0px;
+      padding: 1.25em 0px;
     }
     div {
       display: flex;
@@ -116,25 +116,29 @@ main {
       flex-direction: column;
       height: 100%;
       .item__category {
-        font-size: 23px;
+        font-size: 1.438rem;
         font-weight: 600;
       }
       .item__description {
-        font-size: 30px;
+        font-size: 1.875rem;
         font-weight: 400;
       }
-
+      .btn-wrapper {
+        display: flex;
+      }
       a {
+        color: black;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 600;
         text-decoration: none;
-        width: 130px;
-        height: 30px;
+        width: 8.125rem;
+        height: 1.875rem;
         border: 1px solid black;
-        border-radius: 20px;
+        border-radius: 1.25rem;
+        margin-right: 1rem;
       }
     }
   }
