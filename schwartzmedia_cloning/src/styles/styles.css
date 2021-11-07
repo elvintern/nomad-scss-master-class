@@ -325,4 +325,60 @@ main {
   border-radius: 1.25rem;
   margin-right: 1rem;
 }
+
+.side-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-column: span 2;
+      grid-column-start: span 2;
+  gap: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.side-item .side__column {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-column: span 1;
+      grid-column-start: span 1;
+}
+
+.side-item .side__category {
+  font-size: 1.438rem;
+  font-weight: 600;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.side-item .side__description {
+  font-size: 1.438rem;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.side-item .btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.side-item .btn-wrapper .btn {
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  width: 8.125rem;
+  height: 1.875rem;
+  border: 1px solid black;
+  border-radius: 1.25rem;
+  margin-right: 1rem;
+}
 /*# sourceMappingURL=styles.css.map */
