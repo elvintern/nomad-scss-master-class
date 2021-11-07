@@ -126,20 +126,6 @@ main {
       .btn-wrapper {
         display: flex;
       }
-      a {
-        color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.125rem;
-        font-weight: 600;
-        text-decoration: none;
-        width: 8.125rem;
-        height: 1.875rem;
-        border: 1px solid black;
-        border-radius: 1.25rem;
-        margin-right: 1rem;
-      }
     }
   }
 }
@@ -150,6 +136,7 @@ main {
   grid-column-start: span 2;
   gap: 10px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
   .side__column {
     grid-template-columns: 1fr;
     grid-column-start: span 1;
@@ -165,19 +152,64 @@ main {
   }
   .btn-wrapper {
     display: flex;
-    .btn {
-      color: black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.125rem;
-      font-weight: 600;
-      text-decoration: none;
-      width: 8.125rem;
-      height: 1.875rem;
-      border: 1px solid black;
-      border-radius: 1.25rem;
-      margin-right: 1rem;
-    }
+  }
+  .advertise__description {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.2em;
+    margin-bottom: 50px;
+  }
+}
+
+.btn {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  width: 8.125rem;
+  height: 1.875rem;
+  border: 1px solid black;
+  border-radius: 1.25rem;
+  margin-right: 1rem;
+}
+
+.shop-now {
+  margin-top: 10vh;
+}
+
+.gift {
+  margin-top: 5vh;
+}
+
+.more-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 5vh;
+  .side__column {
+    grid-template-columns: 1fr;
+    grid-column-start: span 1;
+  }
+  .side__category {
+    font-size: 1.438rem;
+    font-weight: 600;
+    margin: 1rem 0 1.5rem 0;
+  }
+  .side__description {
+    font-size: 1.438rem;
+    margin: 1rem 0 1.5rem 0;
+  }
+  .btn-wrapper {
+    display: flex;
+  }
+  .advertise__description {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.2em;
+    margin-bottom: 50px;
   }
 }
